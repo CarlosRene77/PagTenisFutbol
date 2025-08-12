@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fútbol Tenis Pro</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1601808666184-b30c8f09022a?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.8em;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
+
+    .btn {
+      background: #ff4d00;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .products {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .products h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .product {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      margin: 15px 0 10px;
+    }
+
+    .product p {
+      color: #777;
+    }
+
+    .price {
+      color: #ff4d00;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fútbol Tenis Pro</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Productos</a>
+      <a href="#">Ofertas</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Domina la cancha con estilo</h2>
+    <p>Los mejores tenis de fútbol para todos los niveles. Rendimiento, comodidad y diseño.</p>
+    <a href="#productos" class="btn">Explorar colección</a>
+  </section>
+
+  <section class="products" id="productos">
+    <h2>Tenis Destacados</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://martimx.vtexassets.com/arquivos/ids/1266321-800-800?v=638530304981270000&width=800&height=800&aspect=true" alt="Tenis 1">
+        <h3>Adidas Predator</h3>
+        <p>Diseño innovador para máximo control del balón.</p>
+        <p class="price">$120.00</p>
+      </div>
+
+      <div class="product">
+        <img src="https://www.innovasport.com/medias/tenis-de-futbol-nike-mercurial-vapor-15-academy-tf-is-DJ5635-601-1.jpg?context=bWFzdGVyfGltYWdlc3w3NzA0OHxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnd05pOW9ORGd2TVRJM01qYzBPVEUzT0RnNE16QXVhbkJufGYzNDU5ZGUzZGMzOTU0ZTE0NjBlYWFmNDY3NDRlN2ViN2I1OTk0ZjdjYzNjZmNiZjQzYTQ0ZDYyMDQ3MmE5MDI" alt="Tenis 2">
+        <h3>Nike Mercurial</h3>
+        <p>Velocidad y tracción como nunca antes.</p>
+        <p class="price">$135.00</p>
+      </div>
+
+      <div class="product">
+        <img src="https://i5.walmartimages.com/asr/00a8186b-ad6a-412f-9fea-e1218fc4846f.2d33958cefb56ef81f1894d8b4239753.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Tenis 3">
+        <h3>Puma Ultra</h3>
+        <p>Comodidad y ligereza para jugadores rápidos.</p>
+        <p class="price">$110.00</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Fútbol Tenis Pro. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
